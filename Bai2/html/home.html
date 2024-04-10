@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Boostrap/css/bootstrap.min.css">
+    <script src="/Boostrap/js/jquery-3.7.1.min.js"></script>
+    <script src="/Boostrap/js/bootstrap.min.js"></script>
+    <script src="../js/home.js"></script>
+</head>
+<style>
+    [class*=col-] {
+        margin: 0px auto;
+        padding: 0px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    label {
+        width: 250px;
+    }
+    span{
+        color: red !important;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="row header">
+            <img src="../img/banner-5.png" alt="">
+        </div>
+        <div class="row nav">
+            <div class="col-md-12 col-12">
+                <ul class="nav">
+                    <li class="nav-item"><a href="./home.html" class="nav-link">Đăng nhập</a></li>
+                    <li class="nav-item"><a name="" class="btn" data-toggle="modal" data-target=".modal" href="#"
+                            role="button">Mở tour mới</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row table">
+            <table id="table" class="table">
+                
+                    <tr>
+                        <td colspan="8" class="text-center ">DANH SÁCH TOUR - DU LỊCH VIỆT</td>
+                    </tr>
+                    <tr>
+                        <th>STT </th>
+                        <th>MÃ TOUR</th>
+                        <th>HÀNH TRÌNH</th>
+                        <th>NGÀY KHỞI HÀNH</th>
+                        <th>THỜI GIAN</th>
+                        <th>GIÁ TOUR</th>
+                        <th>ẢNH ĐẠI DIỆN</th>
+                    </tr>
+                
+                
+            </table>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title ">Thông tin tour</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="form">
+                        <div class="form-group">
+                            <label style="font-weight: bold;" for="" class="">Mã tour</label>
+                            <input id="txtName" type="text">
+                            <span id="loiTen">*</span>
+                        </div>
+                        <div class="form-group">
+                            <label style="font-weight: bold;" for="" class="">Hành trình</label>
+                            <input id="txtPhone" type="tel">
+                            <span id="loiSDT"></span>
+                        </div>
+                        <div class="form-group">
+                            <label style="font-weight: bold;" for="" class="">Ngày khởi hành</label>
+                            <input id="txtDate" type="date">
+                            <span id="loiNgaySinh">*</span>
+                        </div>
+                        <div class="form-group">
+                            <label style="font-weight: bold;" for="" class="">Thời gian</label>
+                            <input id="txtAdd" type="text">
+                            <span id="loiDC"></span>
+                        </div>
+                        <div class="form-group">
+                            <label style="font-weight: bold;" for="" class="">Giá tour</label>
+                            <input type="text" id="txtGia" >
+                            <span id="loiGia">*</span>
+                        </div>
+                        <div class="form-group">
+                            <label style="font-weight: bold;" for="" class="">Ảnh đại diện</label>
+                            <input style="width: 200px;" type="file"  id="avatar"
+                                accept=".png,.jpg,.gif,.JPG,.PNG,.GIF">
+                            <span id="loiAnh">*</span>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-foooter">
+                    <button id="luu" style="width: 100%;" type="button"
+                        class="btn bg-success  text-white ">Lưu</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
